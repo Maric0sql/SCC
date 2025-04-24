@@ -1,24 +1,24 @@
-print('Average Exchange Rates for Foreign Currencies')
+print('Average exchange rate of foreign currencies')
 
 print('Enter the amount you want to convert')
-amount = float(input('(use . instead of ,): '))
+valor = float(input('(use . instead of ,): '))
 
 euro = 6.20
-usd = 5.83
-gbp = 7.43
+dolar_ame = 5.83
+libra_est =  7.43
 
-print('Which currency would you like to convert the Brazilian Real into?')
-print('1 - Euro')
-print('2 - US Dollar')
-print('3 - British Pound')
+print('Which currency do you want to convert the Brazilian Real to?')
+print('1- to Euro')
+print('2- to US Dollar')
+print('3- to British Pound')
 
-choice = int(input('Enter your option: '))
+escolha = int(input('Enter your option: '))
 
-if choice == 1:
-    print(f'Your amount in Euros is approximately: {amount / euro:.2f}')
+if escolha == 1:
+    print(f'Your value in Euro will be approximately: ' + str(valor/euro))
 
-elif choice == 2:
-    print(f'Your amount in US Dollars is approximately: {amount / usd:.2f}')
+elif escolha == 2:
+    print(f'Your value in US Dollar will be approximately: ' + str(valor/dolar_ame))
 
-elif choice == 3:
-    print(f'Your amount in British Pounds is approximately: {amount / gbp:.2f}')
+if escolha == 3:
+    print(f'Your value in British Pounds will be approximately: ' + str(valor/libra_est))
